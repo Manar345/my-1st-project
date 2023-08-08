@@ -137,7 +137,7 @@ span a {
   padding: 25px;
   color: #c2e54f;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   nav {
     display: none;
   }
@@ -259,7 +259,8 @@ h2 {
 /* ------------------------------------------------------------- */
 
 .service,
-.proj .section-title {
+.proj .section-title,
+.blog .section-title {
   text-align: center;
 }
 .service .section-title h2:after {
@@ -310,7 +311,8 @@ h2 {
   }
 }
 /* ------------------------------------------------------------------------ */
-.proj .section-title h2:after {
+.proj .section-title h2:after,
+.blog .section-title h2::after {
   content: "";
   width: 50px;
   height: 2px;
@@ -351,6 +353,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 5em;
 }
 .pro-imgs div {
   width: 30%;
@@ -367,7 +370,7 @@ h2 {
   width: 100%;
   transition: 0.5s all ease-in-out;
 }
-i {
+.pro-imgs div div i {
   position: absolute;
   top: 47.5%;
   left: 47.5%;
@@ -395,5 +398,62 @@ i {
     width: 45%;
   }
 }
-
+.review {
+  color: #fff;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.review div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.review div h2 {
+  color: #fff;
+  margin-bottom: 3em;
+}
+.review p {
+  width: 52%;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+.sign {
+  opacity: 50%;
+  font-size: 20px;
+}
+.review span {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  align-self: center;
+  position: relative;
+}
+.review span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  left: -20px;
+}
+.review span::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 20px;
+}
 /* --------------------------------------------------------- */
