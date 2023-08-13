@@ -3,7 +3,7 @@
   margin: 0;
 }
 :root {
-  --main-background: url(../imgs./hero_bg_1.jpg);
+  --main-background: url(./imgs/hero_bg_1.jpg);
   --primary-color: #c2e54f;
 }
 /* small  */
