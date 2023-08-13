@@ -613,3 +613,33 @@ textarea {
   }
 }
 /* --------------------------------------------------------- */
+.foot {
+  font-size: 0.9rem;
+  padding: 60px;
+  background-color: #eee;
+}
+.foot .ser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ser > div {
+  padding: 15px;
+}
+.foot h4 {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+.copy {
+  padding-top: 1.7rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .ser > div {
+    width: 100%;
+  }
+}
+/*  The End :)  */
