@@ -199,7 +199,8 @@ span a {
 /*-------------------------------------------------*/
 
 .About,
-.service {
+.service,
+.contact {
   padding: 7em 0;
   margin: 0 auto;
 }
@@ -259,10 +260,14 @@ h2 {
 
 .service,
 .proj .section-title,
-.blog .section-title {
+.blog .section-title,
+.contact .section-title {
   text-align: center;
 }
-.service .section-title h2:after {
+.service .section-title h2:after,
+.proj .section-title h2:after,
+.blog .section-title h2::after,
+.contact .section-title h2:after {
   content: "";
   width: 50px;
   height: 2px;
@@ -310,16 +315,6 @@ h2 {
   }
 }
 /* ------------------------------------------------------------------------ */
-.proj .section-title h2:after,
-.blog .section-title h2::after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 .proj {
   padding-top: 7em;
 }
@@ -538,6 +533,83 @@ h2 {
 @media (max-width: 768px) {
   .blog-content .Bcol {
     width: 95%;
+  }
+}
+/* --------------------------------------------------------- */
+.contact .section-title {
+  margin-bottom: 4em;
+}
+.cont-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form {
+  width: 50%;
+}
+.cont-cont .info {
+  width: 45%;
+}
+b {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.cont-cont h3 {
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.add {
+  margin-bottom: 2rem;
+}
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  color: #495057;
+  transition: 1s;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.dname {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  width: 48%;
+}
+textarea {
+  height: 250px;
+  resize: none;
+}
+.submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.submit:hover {
+  background-color: black;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .form,
+  .cont-cont .info {
+    width: 100%;
   }
 }
 /* --------------------------------------------------------- */
